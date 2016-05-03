@@ -2,6 +2,8 @@
 
 require 'vendor/autoload.php';
 
+use Slim\Slim;
+
 $app = new \Slim\Slim();
 $app->get('/users', 'getUsers');
 $app->get('/users/:id', 'getUser');
@@ -92,10 +94,10 @@ function deleteUser($id) {
 }
 
 function getConnection() {
-	$dbhost="127.0.0.1";
+$dbhost="localhost";
 	$dbuser="root";
 	$dbpass="";
-	$dbname="angular_tutorial";
+	$dbname="shopcart";
 	$dbh = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);	
 	$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	return $dbh;
