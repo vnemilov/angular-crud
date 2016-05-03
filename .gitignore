@@ -2,3 +2,5 @@ api/composer.lock
 
 api/vendor/
 api/vendor/*
+bower_components/
+bower_components/*

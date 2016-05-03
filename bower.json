@@ -1,0 +1,17 @@
+{
+  "name": "bower",
+  "homepage": "https://github.com/vnemilov/angular-crud.git",
+  "authors": [
+    "vnemilov <vnemilov@yahoo.com>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "ui-router#~0.2.18"
+  }
+}
